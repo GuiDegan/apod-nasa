@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-stack: 'Montserrat', sans-serif;
+
+$primaryColor: #21242B;
+$secondaryColor: #2C2F38;
+$tranparent: #070000;
+$orange: #B27100;
+$white: #ffffff;
+$blue: #0b65c3;
+
+$font-text: 16px;
+$font-box: 20px;
+$font-ultra-small: 30px;
+$font-small: 38px;
+$font-medium: 48px;
+$font-large: 60px;
+$font-extra-large: 64px;
+
+$font-regular: 100;
+$font-semiBold: 300;
+$font-Bold: 600;
+
+// ----------------------------------------- SYSTEM ----------------------------------------- //
+html {
+  font-family: $font-stack;
+  font-weight: $font-semiBold;
+}
+
+h1 {
+  font-size: $font-extra-large;
+}
+
+h2 {
+  font-size: $font-medium;
+}
+
+h3 {
+  font-size: $font-small;
+}
+
+h4 {
+  font-size: $font-ultra-small;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h5,
+h6 {
+  margin: 0;
+  color: $white;
+  font-weight: $font-semiBold;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: $font-semiBold;
+  color: $orange;
+}
+
+::-webkit-scrollbar {
+  width: 0.50vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $orange;
+  border-radius: 20px
+}
+
+::-webkit-scrollbar-track {
+  background: $primaryColor;
+}
+
+// ----------------------------------------- BOXES ----------------------------------------- //
+.box-primary {
+  width: 30vw;
+  height: 22vh;
+  margin-bottom: 6rem;
+  background-color: $secondaryColor;
+  margin-top: 45%;
+}
+
+.box-primary-title {
+  text-align: end;
+  color: $white;
+  padding: 1rem 0rem 0rem 0rem;
+  margin: 0;
+  font-size: $font-small;
+  font-weight: 400;
+  padding-right: 1rem;
+}
+
+.box-primary-text {
+  text-align: center;
+  padding-right: none;
+  margin-top: 1vh;
+}
+
+.box-secondary {
+  width: 37vw;
+  height: 22vh;
+  margin-top: 5%;
+  float: right;
+  background-color: $primaryColor;
+}
+
+.box-secondary-title {
+  margin: 0;
+  color: $white;
+  padding: 1rem 0 0 1rem;
+  font-size: $font-small;
+  font-weight: 400;
+}
+
+.box-secondary-align {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box-primary-text,
+.box-secondary-text {
+  color: $white;
+  font-size: $font-box;
+}
+
+.box-content {
+  background-color: $primaryColor;
+}
+
+.box-content-align {
+  padding: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 7rem;
+}
+
+.box-content p {
+  color: $white;
+  font-size: $font-box;
+  text-align: justify;
+}
+
+.box-footer {
+  background-color: $secondaryColor;
+}
+
+.box-footer-align {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+}
+
+.box-footer-linkedin,
+.box-footer-github {
+  width: 7vw !important;
+  height: 14vh !important;
+}
+
+.box-footer-github {
+  color: $primaryColor;
+}
+
+.box-footer-linkedin {
+  color: $blue;
+}
+
+.box-footer-linkedin:hover,
+.box-footer-github:hover {
+  background-color: $orange;
+  border-radius: 10%;
+  transition: 400ms;
+}
+
+// ----------------------------------------- BACKGROUNDS ----------------------------------------- //
+.bg {
+  height: 100vh;
+}
+
+.bg-logo {
+  position: absolute;
+  width: 43.92vw;
+  height: 32.41vh;
+  margin-top: 10%;
+  margin-left: 27%;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg-primary {
+  background-color: $primaryColor;
+}
+
+.bg-primary-logo {
+  margin-left: 3rem;
+}
+
+.bg-secondary {
+  background-color: $secondaryColor;
+}
+
+.bg-secondary-texts {
+  margin: 0 3rem 0rem 0;
+  padding-top: 3rem;
+  text-align-last: end;
+}
+
+.bg-secondary-texts h1 {
+  color: $primaryColor;
+}
+
+.bg-secondary h1,
+h3 {
+  color: $primaryColor;
+}
+
+.bg-secondary-align {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#bg-image {
+  width: -webkit-fill-available;
+}
+
+// ----------------------------------------- BUTTONS ----------------------------------------- //
+.btn-arrow-icon {
+  width: 2.5em !important;
+  height: 2.5em !important;
+  fill: $orange !important;
+}
+
+.btn-arrow {
+  border: solid !important;
+  color: $white !important;
+  width: 4rem;
+  height: 4rem;
+}
+
+.box-footer-rocket {
+  width: 40vh !important;
+  height: 20vw !important;
+  color: $orange;
+  margin-top: -5%;
+}
+
+// ----------------------------------------- ACCORDION ----------------------------------------- //
+.acord-image-align {
+  position: absolute;
+  bottom: 0.1px;
+  width: -webkit-fill-available;
+  opacity: 0.6;
+
+}
+
+.acord-image {
+  background-color: $tranparent !important;
+  color: $white !important;
+  padding: 1rem;
+}
+
+.acord-image p {
+  font-family: $font-stack;
+  text-align: justify;
+  padding-top: 3.88vh;
+}
+
+.acord-image-summary {
+  margin-right: 45% !important;
+}
+
+.acord-image-summary svg {
+  fill: $orange;
+  width: 4rem;
+  height: 4rem;
+}
+
+// ----------------------------------------- MEDIA QUERY ----------------------------------------- //
+@media (min-width: 0px) and (max-width: 580px) {
+  h1 {
+    font-size: $font-medium;
+  }
+
+  h2 {
+    font-size: $font-ultra-small;
+  }
+
+  h3 {
+    font-size: $font-medium
+  }
+
+  h4 {
+    font-size: $font-small;
+  }
+  
+  .acord-image-align {
+    height: -webkit-fill-available;
+    overflow-y: scroll;
+  }
+
+  .acord-image:last-of-type {
+    margin-top: 50% !important;
+  }
+
+  .box-footer-align {
+    padding-left: 0rem;
+  }
+
+  .box-content-align {
+    padding-bottom: 1rem;
+  }
+
+  .acord-image-summary {
+    margin-right: 40% !important;
+  }
+
+  .box-primary {
+    width: 100%;
+    height: 30%;
+  }
+
+  .box-secondary {
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+    background-color: #21242B;
+  }
+
+  .bg-secondary-texts {
+    padding-top: 0;
+    padding: 0rem 3rem 0rem 3rem;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .btn-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .bg-logo {
+    height: auto;
+    margin-top: 22%;
+    margin-left: 0% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 90%;
+  }
+
+  .bg-primary-logo {
+    font-size: clamp(2.5rem, 2vw, 3rem);
+    margin-left: 0rem;
+    text-align-last: center;
+  }
+
+  .bg {
+    height: 100%;
+  }
+
+  .box-primary-title {
+    text-align: center;
+  }
+
+  .box-secondary-title {
+    text-align: center;
+  }
+
+  .box-footer-align {
+    display: inline-grid;
+    padding: 0;
+  }
+
+  .box-footer-mobile {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .box-footer-linkedin,
+  .box-footer-github {
+    width: 25% !important;
+    height: 25% !important;
+  }
+
+  .box-footer-rocket {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1370px) and (max-width: 3000px) {
+  .box-primary {
+    margin-top: 56%;
+    height: 17vh;
+  }
+
+  .box-secondary {
+    height: 17vh;
+    margin-top: 28%;
+  }
+}
