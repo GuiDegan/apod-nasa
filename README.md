@@ -6,6 +6,8 @@ Projeto  criado com o intuito de democratizar e disponibilizar informações sob
 
 O projeto criado aqui, tem como base o programa oficial da NASA, denominado APOD(Astronomy Picture of the Day) - (https://apod.nasa.gov/apod/astropix.html), que diariamente disponibiliza imagens do universo, bem como uma breve explicação sobre a mesma.
 
+Para consulta do arquivo de Design feito através do Adobe XD, acessar o arquivo `APOD.xd` localizado na pasta '\assets'.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
